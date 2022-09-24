@@ -1,8 +1,11 @@
 import Head from 'next/head';
-import Image from 'next/image';
-import styles from './layout.module.css';
-import utilStyles from '../styles/utils.module.css';
 import Link from 'next/link';
+import Image from 'next/image';
+
+import utilStyles from '../styles/utils.module.css';
+import styles from './layout.module.css';
+
+import ProfileImg from '../assets/profile.jpeg';
 
 const name = 'Tiago Mota';
 export const siteTitle = 'Next.js Sample Website';
@@ -30,7 +33,7 @@ export default function Layout({ children, home }) {
           <>
             <Image
               priority
-              src="/images/profile.jpeg"
+              src={ProfileImg}
               className={`${utilStyles.imgProfile} ${utilStyles.borderCircle}`}
               height={144}
               width={144}
@@ -44,7 +47,7 @@ export default function Layout({ children, home }) {
               <a>
                 <Image
                   priority
-                  src="/images/profile.jpeg"
+                  src={ProfileImg}
                   className={`${utilStyles.imgProfile} ${utilStyles.borderCircle}`}
                   height={108}
                   width={108}
