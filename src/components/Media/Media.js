@@ -4,7 +4,7 @@ import { FaTwitter, FaInstagram, FaLinkedinIn, FaGithub } from 'react-icons/fa'
 
 import styles from './media.module.css';
 
-function Media() {
+export const Media = () => {
   return (
     <div className={styles.container}>
       <ul className={styles.listUl}>
@@ -52,5 +52,3 @@ function Media() {
     </div>
   );
 }
-
-export default Media;
