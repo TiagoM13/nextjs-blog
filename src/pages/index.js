@@ -1,8 +1,8 @@
 import Head from 'next/head';
 import Link from 'next/link';
 
-import Layout, { siteTitle } from '../components/layout';
-import Date from '../components/date';
+import { Layout, siteTitle } from '../components/Layout/Layout';
+import { Date } from '../components/Date/Date';
 
 import utilStyles from '../styles/utils.module.css';
 
@@ -17,7 +17,7 @@ export async function getStaticProps() {
   };
 }
 
-export default function Home({ allPostsData }) {
+function Home({ allPostsData }) {
   return (
     <Layout home>
       <Head>
@@ -56,3 +56,5 @@ export default function Home({ allPostsData }) {
     </Layout>
   );
 }
+
+export default Home;
