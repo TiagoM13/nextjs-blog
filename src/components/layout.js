@@ -17,7 +17,7 @@ export default function Layout({ children, home }) {
         <link rel="icon" href="/favicon.ico" />
         <meta
           name="description"
-          content="Learn how to build a personal website using Next.js"
+          content="This is my blog site, I developed this site with Next.js."
         />
         <meta
           property="og:image"
@@ -37,7 +37,7 @@ export default function Layout({ children, home }) {
               className={`${utilStyles.imgProfile} ${utilStyles.borderCircle}`}
               height={144}
               width={144}
-              alt=""
+              alt="imagem de perfil"
             />
             <h1 className={utilStyles.heading2Xl}>{name}</h1>
           </>
@@ -51,7 +51,7 @@ export default function Layout({ children, home }) {
                   className={`${utilStyles.imgProfile} ${utilStyles.borderCircle}`}
                   height={108}
                   width={108}
-                  alt=""
+                  alt="imagem de perfil"
                 />
               </a>
             </Link>
