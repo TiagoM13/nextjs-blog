@@ -6,6 +6,7 @@ import utilStyles from '../styles/utils.module.css';
 import styles from './layout.module.css';
 
 import ProfileImg from '../assets/profile.jpeg';
+import Media from './Media/Media';
 
 const name = 'Tiago Mota';
 export const siteTitle = 'Next.js Sample Website';
@@ -71,6 +72,9 @@ export default function Layout({ children, home }) {
           </Link>
         </div>
       )}
+      <footer>
+        <Media />
+      </footer>
     </div>
   );
 }
