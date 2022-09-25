@@ -1,12 +1,12 @@
 import Head from 'next/head';
-import Layout from '../../components/layout';
-import Date from '../../components/date';
+import { Layout } from '../../components/Layout/Layout';
+import { Date } from '../../components/Date/Date';
 
 import { getAllPostIds, getPostData } from '../../lib/posts';
 
 import utilStyles from '../../styles/utils.module.css';
 
-export default function Post({ postData }) {
+function Post({ postData }) {
   return (
     <Layout>
       <Head>
@@ -39,3 +39,5 @@ export async function getStaticPaths() {
     fallback: false,
   };
 }
+
+export default Post;

@@ -2,22 +2,23 @@ import Head from 'next/head';
 import Link from 'next/link';
 import Image from 'next/image';
 
-import utilStyles from '../styles/utils.module.css';
+import utilStyles from '../../styles/utils.module.css';
 import styles from './layout.module.css';
 
-import ProfileImg from '../assets/profile.jpeg';
+import ProfileImg from '../../assets/profile.jpeg';
+import { Media } from '../Media/Media';
 
 const name = 'Tiago Mota';
-export const siteTitle = 'Next.js Sample Website';
+export const siteTitle = 'Next.js - Blog Website';
 
-export default function Layout({ children, home }) {
+export const Layout = ({ children, home }) => {
   return (
     <div className={styles.container}>
       <Head>
         <link rel="icon" href="/favicon.ico" />
         <meta
           name="description"
-          content="Learn how to build a personal website using Next.js"
+          content="This is my blog site, I developed this site with Next.js."
         />
         <meta
           property="og:image"
@@ -37,7 +38,7 @@ export default function Layout({ children, home }) {
               className={`${utilStyles.imgProfile} ${utilStyles.borderCircle}`}
               height={144}
               width={144}
-              alt=""
+              alt="imagem de perfil"
             />
             <h1 className={utilStyles.heading2Xl}>{name}</h1>
           </>
@@ -51,7 +52,7 @@ export default function Layout({ children, home }) {
                   className={`${utilStyles.imgProfile} ${utilStyles.borderCircle}`}
                   height={108}
                   width={108}
-                  alt=""
+                  alt="imagem de perfil"
                 />
               </a>
             </Link>
@@ -71,6 +72,9 @@ export default function Layout({ children, home }) {
           </Link>
         </div>
       )}
+      <footer>
+        <Media />
+      </footer>
     </div>
   );
 }
