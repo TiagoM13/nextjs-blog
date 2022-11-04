@@ -10,7 +10,7 @@
   - Javascript
   - CSS module
 
-## 🔗 do Projeto 
+## 🔗 Link do Projeto 
 
   [Next Blog](https://nextjs-blog-9s4j.vercel.app/)
 
